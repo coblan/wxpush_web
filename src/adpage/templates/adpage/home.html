@@ -1,0 +1,47 @@
+{% extends "adpage/base.html" %}
+
+
+{% block page_content %}
+<script>
+    $(function(){
+        $('#jian').addClass('active')
+    })
+</script>
+
+
+<div class="jumbotron">
+    <h1>微信群发器</h1>
+    <p>微信推广具备庞大的潜在客户数量，成本低，定位精准等优势。本软件利用微信接口，进行群发，极大的减轻您的单调的劳动。您可以下载试用，试用天数为3天。</p>
+    <p><a class="btn btn-primary btn-lg" href="/web/download" role="button">下载</a></p>
+</div>
+
+<div class="row">
+
+
+</div >
+
+<div class="row">
+    <div style="overflow: hidden">
+        <h1>使用场景一</h1>
+        <img src="/static/image/jjyy.jpg" alt="" width="400px" style="float: right;margin-right: 5em;"/>
+        <p>商家准备向自己累积的用户好友推送促销信息。</p>
+        <p>
+            首先将促销信息，包括文字信息和图片信息放入指定文件夹。商家在微信群发器中登陆自己的微信号，根据地域和昵称选择需要发送的人，然后点击发送。微信群发器会向被选择的好友与群每人发送一个推广信息。
+            这些推广信息来自于指定文件夹，随机选择，所以好友收到的一般都是不同的推广信息。
+        </p>
+
+
+    </div>
+    <div>
+        <img src="/static/image/th.jpg" alt="" width="300px" style="float: left;margin: 3em 2em 0 5em;"/>
+        <h1>使用场景二</h1>
+        <p>
+            商家利用自己的客户微信号，向客户的好友发送推广信息。
+        </p>
+        <p>
+            商家以折扣为报酬，<b>征得客户的同意</b>，让客户扫描二维码，登陆到微信群发器，经过适当的选择，然后向客户的好友群发推广信息。
+        </p>
+    </div>
+
+</div>
+{% endblock %}

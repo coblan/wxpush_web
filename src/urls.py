@@ -17,8 +17,18 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from validate import views as validate_views
+from adpage import views as adpage_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^wx/?$',validate_views.valide),
     url(r'^bj/?$',validate_views.set_code),
+    url(r'^$',adpage_views.commonpage),
+    url(r'^web/(?P<name>\w+)/?$',adpage_views.commonpage),
 ]
+
+
+#from django.conf import settings
+#from django.conf.urls.static import static
+
+#if settings.DEBUG:
+    #urlpatterns = urlpatterns + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
