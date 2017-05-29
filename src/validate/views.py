@@ -28,10 +28,10 @@ def valide(request):
     else:
         now = timezone.now()
         delta = now-mac.start_time
-        if delta.days >1 :
+        if delta.days >3 :
             dc={'status':'fail'}
         else:
-            # 小于一天，试用期。
+            # 小于三天，试用期。
             dc={'status':'success','try_user':True}
     return HttpResponse(json.dumps(dc),content_type="application/json")  
 
