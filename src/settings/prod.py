@@ -1,5 +1,9 @@
 from base import *
 
+from helpers.maintenance.log import log_setting
+
+log_setting.SET(globals())
+
 DATABASES = {
     'default': {
         'NAME': 'wxpush',
